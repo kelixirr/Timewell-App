@@ -1,8 +1,6 @@
 .addTaskContainer {
   max-width: 500px;
   width: 90%;
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
 }
 
 .addTaskForm {
@@ -38,7 +36,7 @@
   margin-bottom: 1.6rem;
 }
 
-.inputGroup p{
+.inputGroup p {
   margin: 0 0 0 0.4rem;
 }
 
@@ -71,7 +69,8 @@
 .inputText:focus,
 .inputTextArea:focus,
 .inputDate:focus,
-.inputSelect:focus, .quillEditor:hover {
+.inputSelect:focus,
+.quillEditor:hover {
   border-color: var(--pt-color);
   outline: none;
   box-shadow: 0 0 0 3px var(--box-shadow-color);
@@ -92,13 +91,13 @@
   height: 80px;
 }
 
-.quillEditor{
+.quillEditor {
   min-height: 240px;
   max-height: 280px;
   min-width: 100%;
   max-width: 450px;
   text-align: center;
-  border: 1px solid var(--gray-color-eee); 
+  border: 1px solid var(--gray-color-eee);
   color: var(--gray-color-333);
   border-radius: 0.5rem;
   padding: 0 8.8rem;

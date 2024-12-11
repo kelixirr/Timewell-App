@@ -35,6 +35,8 @@ export const TaskProvider = ({ children }) => {
           id: uuidv4(),
           title: `(Copy) of ${taskToDuplicate.title}`,
           taskStatus: "Pending",
+          totalTaskTime: 0,
+          taskProductivity: 0,
         };
         return [...prevTasks, newTask];
       }

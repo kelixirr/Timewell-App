@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HiOutlineMenuAlt2, HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
-import { MdOutlineAddTask, MdDashboard, MdPeople } from "react-icons/md";
+import { MdOutlineAddTask, MdDashboard, MdFeedback } from "react-icons/md";
 import { FaProductHunt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import styles from "./AppHeader.module.css";
@@ -44,12 +44,21 @@ export default function AppHeader({ toggleSidebar, isCollapsed }) {
         )}
         <li className={styles.BetaTag}>BETA</li>
         <li
-          onClick={() => window.open("https://www.producthunt.com", "_blank")}
+          onClick={() =>
+            window.open("https://www.producthunt.com/posts/timewell", "_blank")
+          }
         >
           <FaProductHunt title="Product Hunt" />
         </li>
-        <li onClick={() => navigate("/community")}>
-          <MdPeople title="Community" />
+        <li
+          onClick={() =>
+            window.open(
+              "https://discord.com/channels/1009694332074328165/1316415632383803432",
+              "_blank"
+            )
+          }
+        >
+          <MdFeedback title="Community and Feedback" />
         </li>
       </ul>
 

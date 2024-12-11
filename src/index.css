@@ -56,7 +56,31 @@ html {
   overflow-x: hidden;
 }
 
-@media (max-width: 615px){
+@media (max-width: 1200px) {
+  html {
+    font-size: calc(62.5% * 0.9);
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: calc(62.5% * 0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: calc(62.5% * 0.7);
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: calc(62.5% * 0.6);
+  }
+}
+
+/* @media (max-width: 615px){
   html{
   font-size: 55%;
   }
@@ -84,7 +108,7 @@ html {
   html {
     font-size: 34%;
   }
-}
+} */
 
 body {
   font-family: "Inter", sans-serif;

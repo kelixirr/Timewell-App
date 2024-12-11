@@ -127,7 +127,7 @@ export default function AddTask({ task = {}, onSubmit }) {
          
             <div className={styles.inputGroup}>
               <label htmlFor="task-date-time" className={styles.inputLabel}>
-                Reminder
+                Date & Time
               </label>
               <input
                 id="task-date-time"
