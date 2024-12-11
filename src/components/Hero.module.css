@@ -1,0 +1,124 @@
+.MainContainer{
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 12, 12, 0.74),
+      rgb(7, 7, 7)), url("../../public/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.HeroContainer{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.HeroHeading{
+  font-size: 4.778rem;
+  color: var(--white-color);
+  font-weight: 700;
+  padding: 0 2rem;
+}
+
+.HeroParagraph {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  width: 60%;
+  font-weight: 400;
+  color: var(--white-color);
+  margin-bottom: 1.2rem;
+}
+
+.HeroForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3.2rem;
+  width: 40rem;
+  border-radius: 0.8rem;
+  transition: 0.3s all;
+  margin-bottom: 3.2rem;
+}
+
+.HeroForm:hover {
+  width: 48rem
+}
+
+.HeroForm input[type="text"]{
+ padding: 1.2rem;
+ width: 100%;
+ border: 3px solid var(--pt-color);
+ border-radius: 0.8rem;
+ transition: 0.3s all;
+ cursor:text;
+}
+
+.HeroForm input:focus {
+  border-color: var(--pt-color);
+}
+
+.HeroForm input::placeholder {
+  font-size: 1.6rem;
+  color: var(--gray-color-888);
+}
+
+.HeroForm button{
+  padding: 1.2rem;
+  width: 100%;
+  background-color: var(--p-color);
+  border-radius: 0.8rem;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.customers p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  color: var(--white-color);
+}
+
+.CustomersImage {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+ justify-items: center;
+}
+
+.CustomersImage img {
+  width: auto;
+  height: 50px;
+  border-radius: 50%;
+  border: 0.5rem solid var(--white-color);
+  margin-left: -15px;
+}
+
+@media (max-width: 600px) {
+  .CustomersImage img {
+    height: 35px;
+  }
+
+    .customers p {
+      font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,112 @@
+.AppHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.4rem;
+  font-size: 1.6rem;
+  color: var(--white-color);
+  height: 60px;
+  background-color: var(--s-color);
+  border-bottom: 1px solid var(--s-color);
+  position: relative;
+}
+
+.AppHeaderLogoSide,
+.AppHeaderUl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.AppHeaderLogoSide {
+  flex-grow: 1;
+}
+
+.BetaTag {
+  background-color: #18af45;
+  color: var(--white-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.SidebarToggleButton {
+  cursor: pointer;
+  font-size: 3.2rem;
+  padding: .4rem;
+  box-sizing: border-box;
+  color: var(--white-color);
+}
+
+.AppHeaderLogoSide li,
+.AppHeaderUl li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease-in;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+}
+
+.active {
+  background-color: var(--hover-h-m-b-color);
+}
+
+.AppHeaderLogoSide li:hover,
+.SidebarToggleButton:hover,
+.AppHeaderUl li:hover {
+  background-color: var(--hover-h-m-b-color);
+}
+
+.MobileMenuToggle {
+  display: none;
+}
+
+
+.icon {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.themeIcon .icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.themeIcon .icon-entering {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.themeIcon .icon-leaving {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .AppHeaderContainer {
+    padding: 0 1rem;
+  }
+
+  .AppHeaderUl li span {
+    display: none;
+  }
+
+  .AppHeaderUl li {
+    padding: 0.6rem;
+    background: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .AppHeaderContainer {
+    font-size: 2rem;
+  }
+
+  .BetaTag {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,84 @@
+.TaskListContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  margin: 1.2rem 0 1.2rem 0.6rem;
+  padding: 0.96rem;
+  overflow: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+  border-top: 1px solid var(--gray-color-eee);
+}
+
+.TaskListItemDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+
+.TaskListUl{
+  display: flex;
+  flex-direction: column;
+  gap: 0.64rem;
+}
+
+.TaskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.4rem;
+  cursor: pointer;
+  gap: 0.6rem;
+  color: var(--gray-color-333);
+}
+
+.TaskItemP {
+  flex-grow: 1;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+ .TaskItem:hover{
+  background-color: var(--gray-color-eee);
+  border-radius: 0.8rem;
+  color: var(--pt-color);
+}
+
+.ActiveTask{
+  background-color: var(--gray-color-eee) !important;
+}
+
+.TaskItem > svg {
+  margin-left: auto;
+}
+
+.TaskListHeading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  margin-left: 0.6rem;
+  color: var(--gray-color-333);
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--s-color);
+  border-radius: 0.8rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--white-color);
+}
+
+.NoTasksMessage {
+  font-size: 1rem;
+  color: var(--gray-color-666);
+  text-align: center;
+  padding: 2rem;
+}

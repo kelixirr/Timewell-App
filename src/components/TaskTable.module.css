@@ -1,0 +1,242 @@
+
+.taskTableContainer {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+
+.taskTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--b-color-table);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  min-width: 800px;
+}
+
+
+.taskTable th,
+.taskTable td {
+  padding: 1.2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-color-ddd);
+  font-size: 1rem;
+  color: var(--pt-color);
+}
+
+.taskTable td:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.taskTable th {
+  background-color: var(--p-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+
+.taskTable td[colspan="8"] {
+  font-size: 1rem;
+  color: var(--gray-color-999);
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+
+.paginationButton {
+  background-color: var(--p-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+.paginationButton:disabled {
+  background-color: var(--gray-color-ddd);
+  color: var(--gray-color-666);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.paginationText {
+  font-size: 0.875rem;
+  color: var(--gray-color-333);
+  font-weight: bold;
+}
+
+
+.subMenu {
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+}
+
+.subMenu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.4rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.subMenuItem {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--pt-color);
+  border-radius: 0.8rem;
+  border: 1px solid var(--pt-color);
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.2s ease;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.subMenuItem:hover {
+  background-color: var(--p-color);
+  color: var(--white-color);
+  transform: scale(1.05);
+}
+
+
+.activeTab {
+  border: 2px solid var(--p-color);
+  background-color: var(--p-color);
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+
+.subMenuItem:last-child {
+  border-color: var(--pt-color);
+  background-color: transparent;
+  color: var(--pt-color);
+}
+
+.subMenuItem:last-child:hover {
+  background-color: var(--p-color);
+  color: var(--white-color);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .taskTableContainer {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .taskTable {
+    min-width: 100%;
+    border-radius: 0.6rem;
+  }
+
+  .taskTable th,
+  .taskTable td {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .subMenu ul {
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  .subMenuItem {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .taskTableContainer {
+    padding: 0.5rem;
+    overflow-x: auto;
+  }
+
+  .taskTable {
+    font-size: 0.8rem;
+  }
+
+  .taskTable th,
+  .taskTable td {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .taskTable td:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .taskTable td button {
+    margin: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+ 
+
+    .pagination {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .paginationButton {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.64rem;
+    }
+  
+    .paginationText {
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+  .taskTableContainer {
+    padding: 0.25rem;
+  }
+
+  .taskTable {
+    font-size: 0.7rem;
+  }
+
+  .taskTable th,
+  .taskTable td {
+    padding: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .taskTable td button {
+    margin: 0.2rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.6rem;
+  }
+}

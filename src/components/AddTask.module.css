@@ -1,0 +1,137 @@
+.addTaskContainer {
+  max-width: 500px;
+  width: 90%;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.addTaskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.addTaskFieldset {
+  border: none;
+  background-color: var(--b-color-table);
+  border-radius: 1rem;
+  padding: 2.4rem;
+  border: 1px solid var(--gray-color-eee);
+  box-shadow: 0 6px 20px var(--box-shadow-color);
+}
+
+.addTaskLegend {
+  background-color: var(--p-color);
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  font-size: 1.4rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.inputGroup p{
+  margin: 0 0 0 0.4rem;
+}
+
+.inputLabel {
+  font-weight: 600;
+  color: var(--gray-color-333);
+  margin-left: 0.25rem;
+  font-size: 1.4rem;
+}
+
+.inputLabelText {
+  color: var(--gray-color-333);
+}
+
+.inputText,
+.inputTextArea,
+.inputDate,
+.inputSelect {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray-color-eee);
+  color: var(--gray-color-333);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  font-size: 1.4rem;
+  background-color: var(--b-color-table);
+}
+
+
+.inputText:focus,
+.inputTextArea:focus,
+.inputDate:focus,
+.inputSelect:focus, .quillEditor:hover {
+  border-color: var(--pt-color);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--box-shadow-color);
+}
+
+.inputSelect {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="%23a35028"><path d="M0 0h10L5 6z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 10px 6px;
+  appearance: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.inputTextArea {
+  resize: none;
+  height: 80px;
+}
+
+.quillEditor{
+  min-height: 240px;
+  max-height: 280px;
+  min-width: 100%;
+  max-width: 450px;
+  text-align: center;
+  border: 1px solid var(--gray-color-eee); 
+  color: var(--gray-color-333);
+  border-radius: 0.5rem;
+  padding: 0 8.8rem;
+  transition: all 0.3s ease;
+  overflow: auto;
+}
+
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.submitButton {
+  background-color: var(--p-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.submitButton:hover {
+  background-color: var(--s-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px var(--box-shadow-color);
+}
+
+.submitButton:active {
+  transform: translateY(1px);
+}

@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+:root{
+  --p-color: #623018;
+  --pt-color: #623018;
+  --s-color: #412010;
+  --st-b-color: #623018;
+  --focus-color: #ffe8dc;
+  --hover-m-b-color: rgba(163, 80, 2, 0.06);
+  --hover-h-m-b-color: rgba(255, 255, 255, 0.2);
+  --overlay-b-color: rgba(0, 0, 0, 0.5);
+  --b-color-timewell: #f4f4f9;
+  --b-color-table: #fafafa;
+  --white-color: #ffff;
+  --gray-color-999: #999;
+  --gray-color-ddd: #ddd;
+  --gray-color-333: #333;
+  --gray-color-666: #666;
+  --gray-color-888: #888;
+  --gray-color-eee: #eee;
+  --button-disabled: #e0e0e0;
+  --box-shadow-color: rgba(41, 28, 28, 0.08);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body.dark {
+  --p-color: #242424;
+  --pt-color: #999999;
+  --s-color: #070707;
+  --focus-color: #3a3a3a;
+  --hover-m-b-color: rgba(255, 255, 255, 0.08);
+  --hover-h-m-b-color: rgba(255, 255, 255, 0.15);
+  --overlay-b-color: rgba(0, 0, 0, 0.836);
+  --b-color-timewell: #0e0e0e;
+  --b-color-table: #111111;
+  --white-color: #ffffffd0;
+  --gray-color-999: #afafaf;
+  --gray-color-ddd: #535353;
+  --gray-color-333: #acacac;
+  --gray-color-666: #a8a8a8;
+  --gray-color-888: #777777;
+  --gray-color-eee: #222222;
+  --st-b-color: #252525;
+  --button-disabled: #353535;
+  --box-shadow-color: rgba(255, 255, 255, 0);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 615px){
+  html{
+  font-size: 55%;
+  }
+}
+
+@media (max-width: 517px) {
+  html {
+    font-size: 46%;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 43%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 39%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 34%;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--b-color-timewell);
+}
+
+*:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--focus-color);
+  outline-offset: 2px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 }

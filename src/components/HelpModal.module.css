@@ -1,0 +1,110 @@
+.helpIcon {
+  cursor: pointer;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.helpIcon:hover {
+  transform: scale(1.1);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-b-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: var(--b-color-table);
+  border-radius: 0.8rem;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-color-eee);
+}
+
+.modalHeader h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--pt-color);
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--pt-color);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.closeButton:hover {
+  transform: rotate(90deg);
+}
+
+.modalBody {
+  padding: 1.4rem 0;
+}
+
+.section {
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.section h3 {
+  font-size: 1.4rem;
+  color: var(--pt-color);
+  margin-bottom: 0.8rem;
+}
+
+.section p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.6;
+  color: var(--gray-color-666);
+}
+
+.section ul {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--gray-color-666);
+}
+
+
+.modalFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.modalFooter button {
+  background-color: var(--s-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.modalFooter button:hover {
+  background-color: var(--s-color);
+}

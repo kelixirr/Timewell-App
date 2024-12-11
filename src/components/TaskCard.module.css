@@ -1,0 +1,263 @@
+.PGTaskCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--b-color-table);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px var(--box-shadow-color);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  flex: 0 0 50%;
+  max-width: 750px; 
+  max-height: 100%;
+}
+
+
+.TaskTags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 1.2rem;
+  background-color: var(--b-color-table);
+  border-bottom: 1px solid var(--gray-color-eee);
+}
+
+
+.DateTag,
+.TimeTag,
+.PriorityTag,
+.StatusTag {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+.DateTag {
+  background-color: #e6f3ff;
+  color: #2c7be5;
+}
+
+.TimeTag {
+  background-color: #e6fff0;
+  color: #276351;
+}
+
+.StatusTag {
+  background-color: #e4054f;
+  color: #ffd3d3;
+}
+
+.PriorityTag {
+  background-color: #fff0f0;
+  color: #a35028;
+}
+
+.PriorityLow {
+  background-color: #e8f6ff;
+  color: #1479c0;
+}
+
+.PriorityMedium {
+  background-color: #fff9e6;
+  color: #d69f00;
+}
+
+.PriorityHigh {
+  background-color: #e7e2ff;
+  color: #310edd;
+}
+
+.PrioritySevere {
+  background-color: rgba(255, 51, 51, 0.1);
+  color: #ff3333;
+}
+
+.StatusPending {
+  background-color: #fff4e5;
+  color: #f7921e;
+}
+
+.StatusInProgress {
+  background-color: #e6f5ff;
+  color: #2c7be5;
+}
+
+.StatusCompleted {
+  background-color: #e6fff0;
+  color: #20c997;
+}
+
+.StatusOverdue {
+  background-color: rgba(255, 77, 77, 0.1);
+  color: #ff4d4d;
+}
+
+.TaskContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.TaskTitle {
+  font-size: 2.4rem;
+  color: var(--gray-color-333);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--gray-color-eee);
+}
+
+.TaskDescriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-grow: 1;
+}
+
+.ShortDescription {
+  font-size: 1.6rem;
+  color: var(--gray-color-333);
+  line-height: 1.4;
+}
+
+.LongDescription {
+  font-size: 1.6rem;
+  color: var(--gray-color-333);
+  line-height: 1.6;
+  height: 400px;
+}
+
+.TaskActions {
+  display: flex;
+  padding: 1.2rem;
+  gap: 1.2rem;
+  background-color: var(--b-color-table);
+  border-top: 1px solid var(--gray-color-eee);
+}
+
+.TaskActions>*:last-child {
+  margin-left: auto;
+}
+
+.AddToTimerButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--p-color);
+  color: var(--white-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.AddToTimerButton:hover {
+  background-color: var(--s-color);
+}
+
+.TaskTimerTracking {
+  background-color: var(--b-color-table);
+  color: var(--gray-color-333);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--gray-color-eee);
+}
+
+.TimerTrackingInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--gray-color-333);
+}
+
+.TimerTrackingInfo span:first-child {
+  font-weight: 600;
+  color: var(--pt-color);
+}
+
+.ActionButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--gray-color-eee);
+  color: var(--pt-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.48rem 1rem;
+  border-radius: 0.8rem;
+}
+
+.TimerTrackingActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.ActionButton:hover {
+  background-color: var(--s-color);
+  color: var(--white-color);
+}
+
+.ActionButton span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.disabled, .CompleteTaskButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.disabled {
+  background-color: var(--button-disabled);
+  color: var(--gray-color-888);
+  cursor: not-allowed;
+}
+
+.CompleteTaskButton {
+  background-color: #05a728;
+  color: var(--white-color);
+  font-size: 1.4rem;
+}
+
+.CompleteTaskButton:hover {
+  background-color: #04700d;
+}
+
+.spanDiv{
+  display: flex; 
+  gap: 0.64rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.RightAligned {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.64rem;
+  background-color: var(--b-color-table);
+  color: var(--pt-color);
+  padding: 0.32rem 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.RightAligned svg {
+  font-size: 1.2rem;
+  fill: var(--pt-color);
+}

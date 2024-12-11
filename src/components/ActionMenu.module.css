@@ -1,0 +1,80 @@
+.actionMenu {
+  position: relative;
+}
+
+.ellipsisBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-color-888);
+}
+
+
+.portalMenu {
+  position: absolute;
+  width: 120px;
+  padding: 0.4rem;
+  background-color: var(--b-color-table);
+  border: 1px solid var(--gray-color-eee);
+  border-radius: 0.75rem;
+  box-shadow:
+    0 10px 15px -3px var(--box-shadow-color),
+    0 4px 6px -2px var(--box-shadow-color);
+  z-index: 1000;
+}
+
+.modalMenu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.25s ease-in-out,
+    visibility 0.25s ease-in-out,
+    transform 0.25s ease-in-out;
+  overflow: hidden;
+}
+
+.modalMenu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menuList {
+  list-style: none;
+  padding: 0.1rem;
+  margin: 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.75rem 1.2rem;
+  color: var(--gray-color-666);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  font-size: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.menuItem:hover {
+  background-color: var(--gray-color-eee);
+  color: var(--pt-color);
+}
+
+.menuItem:active {
+  background-color: var(--b-color-table);
+}
+
+.menuItem:not(:last-child) {
+  border-bottom: 1px solid var(--gray-color-eee);
+}
+
+.menuItemIcon {
+  margin-right: 0.96rem;
+  font-size: 1rem;
+  color: var(--pt-color);
+}
